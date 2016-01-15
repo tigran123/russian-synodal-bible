@@ -1,0 +1,1558 @@
+\makeatletter
+
+\define@key{bibevnt}{n}{\gdef\bibevnt@n{#1}}
+\define@key{bibevnt}{event}{\gdef\bibevnt@event{#1}}
+\define@key{bibevnt}{Mat}{\gdef\bibevnt@Mat{#1}}
+\define@key{bibevnt}{Mar}{\gdef\bibevnt@Mar{#1}}
+\define@key{bibevnt}{Luk}{\gdef\bibevnt@Luk{#1}}
+\define@key{bibevnt}{Joh}{\gdef\bibevnt@Joh{#1}}
+
+\def\DescribeEvent#1{%
+  \global\let\bibevnt@n\@empty
+  \global\let\bibevnt@event\@empty
+  \global\let\bibevnt@Mat\@empty
+  \global\let\bibevnt@Mar\@empty
+  \global\let\bibevnt@Luk\@empty
+  \global\let\bibevnt@Joh\@empty
+  \setkeys{bibevnt}{#1}%
+  \noindent\hangindent=\evntw\hangafter=1
+  \hb@xt@\evntw{\hfill\footnotesize\bibevnt@n\kern3pt}%
+  \footnotesize\bibevnt@event
+  &\footnotesize\bibevnt@Mat
+  &\footnotesize\bibevnt@Mar
+  &\footnotesize\bibevnt@Luk
+  &\footnotesize\bibevnt@Joh
+  \tabularnewline
+}
+
+\def\EventHeaderCap#1{\multicolumn{5}{c}{%
+  \fontsize{10}{12}\bfseries\scshape\bibstrut#1}\tabularnewline}
+\def\EventHeader#1{\multicolumn{5}{c}{%
+  \footnotesize\bfseries\bibstrut#1}\tabularnewline}
+
+\newlength\maxrangew
+\setbox0=\hbox{\footnotesize 88:88-88:88,}
+\maxrangew=\wd0
+\advance\maxrangew by 2pt
+
+\newlength\evntw
+\setbox0=\hbox{\footnotesize 888}
+\evntw=\wd0
+\advance\evntw by 3pt
+
+\def\bibstrut{%
+  \vrule
+    \@height\dimexpr\f@size pt*11/10\relax
+    \@depth.3\baselineskip
+    \@width\z@
+}
+
+\makeatother
+
+\bibmark{book}{последовательность евангельских событий}
+\bibpdfbookmark{Последовательность Евангельских событий}{ntevents}
+
+\begin{landscape}
+
+\begin{center}
+\Large\bfseries
+ПОСЛЕДОВАТЕЛЬНОСТЬ ЕВАНГЕЛЬСКИХ СОБЫТИЙ ПО ЧЕТЫРЕМ ЕВАНГЕЛИСТАМ
+\end{center}
+
+\begin{longtable}{|>{\raggedright}p{0.5\linewidth}|p{\maxrangew}|p{\maxrangew}|p{\maxrangew}|p{\maxrangew}|}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}*{Евангельское повествование}}&\multicolumn{4}{c|}{\bibstrut Главы и стихи евангелистов}\tabularnewline
+\cline{2-5}
+&\multicolumn{1}{c|}{\bibstrut Матфея}&\multicolumn{1}{c|}{Марка}&\multicolumn{1}{c|}{Луки}&\multicolumn{1}{c|}{Иоанна}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\DescribeEvent{
+  n={1},
+  event={Пролог},
+  Mat={\bibref[1:1]{Mat 1:1}},
+  Mar={\bibref[1:1--3]{Mar 1:1}},
+  Luk={\bibref[1:1--4]{Luk 1:1}},
+  Joh={\bibref[1:1--18]{Joh 1:1}}
+}
+\DescribeEvent{
+  n={2},
+  event={Родословие Иисуса Христа},
+  Mat={\bibref[1:1--17]{Mat 1:1}},
+  Mar={},
+  Luk={\bibref[3:23--38]{Luk 3:23}},
+  Joh={}
+}
+\DescribeEvent{
+  n={3},
+  event={Благовестие Захарии о рождении Иоанна Предтечи},
+  Mat={},
+  Mar={},
+  Luk={\bibref[1:5--25]{Luk 1:5}},
+  Joh={}
+}
+\DescribeEvent{
+  n={4},
+  event={Благовещение Марии},
+  Mat={},
+  Mar={},
+  Luk={\bibref[1:26--38]{Luk 1:26}},
+  Joh={}
+}
+\DescribeEvent{
+  n={},
+  event={Мария в доме Елисаветы},
+  Mat={},
+  Mar={},
+  Luk={\bibref[1:39--56]{Luk 1:39}},
+  Joh={}
+}
+\DescribeEvent{
+  n={5},
+  event={Рождение Иоанна Предтечи},
+  Mat={},
+  Mar={},
+  Luk={\bibref[1:57--80]{Luk 1:57}},
+  Joh={}
+}
+\DescribeEvent{
+  n={6},
+  event={Откровение Иосифу Праведному о Боговоплощении},
+  Mat={\bibref[1:18--25]{Mat 1:18}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={7},
+  event={Рождество Иисуса Христа},
+  Mat={\bibref[2:1]{Mat 2:1}},
+  Mar={},
+  Luk={\bibref[2:1--7]{Luk 2:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={8},
+  event={Поклонение пастырей},
+  Mat={},
+  Mar={},
+  Luk={\bibref[2:8--20]{Luk 2:8}},
+  Joh={}
+}
+\DescribeEvent{
+  n={9},
+  event={Обрезание и наречение имени Иисус},
+  Mat={\bibref[1:25]{Mat 1:25}},
+  Mar={},
+  Luk={\bibref[2:21]{Luk 2:21}},
+  Joh={}
+}
+\DescribeEvent{
+  n={10},
+  event={Сретение Господа в храме},
+  Mat={},
+  Mar={},
+  Luk={\bibref[2:22--33]{Luk 2:22}},
+  Joh={}
+}
+\DescribeEvent{
+  n={11},
+  event={Поклонение волхвов},
+  Mat={\bibref[2:1--12]{Mat 2:1}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={12},
+  event={Бегство в Египет},
+  Mat={\bibref[2:13--15]{Mat 2:13}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={13},
+  event={Избиение младенцев в Вифлееме},
+  Mat={\bibref[2:16--18]{Mat 2:16}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={14},
+  event={Возвращение из Египта, поселение в Назарете; отрок Иисус в храме},
+  Mat={\bibref[2:19--23]{Mat 2:19}},
+  Mar={},
+  Luk={\bibref[2:39--52]{Luk 2:39}},
+  Joh={}
+}
+\DescribeEvent{
+  n={15},
+  event={Проповедь Иоанна Предтечи в пустыне; свидетельство об Иисусе Христе},
+  Mat={\bibref[3:1--12]{Mat 3:1}},
+  Mar={\bibref[1:1--8]{Mar 1:1}},
+  Luk={\bibref[3:1--18]{Luk 3:1}},
+  Joh={\bibref[1:19--28]{Joh 1:19}}
+}
+\DescribeEvent{
+  n={16},
+  event={Крещение Господне},
+  Mat={\bibref[13:13--17]{Mat 13:13}},
+  Mar={\bibref[1:9--11]{Mar 1:9}},
+  Luk={\bibref[3:21--22]{Luk 3:21}},
+  Joh={}
+}
+\DescribeEvent{
+  n={17},
+  event={Искушение Иисуса Христа в пустыне},
+  Mat={\bibref[4:1--11]{Mat 4:1}},
+  Mar={\bibref[1:12--13]{Mar 1:12}},
+  Luk={\bibref[4:1--13]{Luk 4:1}},
+  Joh={}
+}
+\hline
+\EventHeader{Дела Господа Иисуса Христа в Иудее после искушения Его в пустыне до первой Пасхи}
+\hline
+\DescribeEvent{
+  n={18},
+  event={Последующие свидетельства Иоанна Предтечи об Иисусе Христе},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[1:19--36]{Joh 1:19}}
+}
+\DescribeEvent{
+  n={},
+  event={Первые ученики Господа},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[1:37--51]{Joh 1:37}}
+}
+\hline
+\EventHeader{Дела Господа Иисуса Христа в Галилее по возвращении из Иудеи}
+\hline
+\DescribeEvent{
+  n={19},
+  event={Чудо в Кане галилейской},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[2:1--11]{Joh 2:1}}
+}
+\DescribeEvent{
+  n={20},
+  event={Посещение Капернаума},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[2:12]{Joh 2:12}}
+}
+\hline
+\EventHeaderCap{Служение Господа Иисуса Христа от первой пасхи до второй}
+\EventHeader{События в Иудее}
+\hline
+\DescribeEvent{
+  n={21},
+  event={Изгнание торгующих из храма. Свидетельство Иисуса Христа о Своем Богосыновстве},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[2:13--25]{Joh 2:13}}
+}
+\DescribeEvent{
+  n={22},
+  event={Беседа Иисуса Христа с Никодимом},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[3:1--21]{Joh 3:1}}
+}
+\DescribeEvent{
+  n={23},
+  event={Иисус с учениками в Иудее},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[3:22]{Joh 3:22}}
+}
+\DescribeEvent{
+  n={},
+  event={Последнее свидетельство Иоанна Крестителя об Иисусе Христе пред учениками},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[3:23--36]{Joh 3:23}}
+}
+\DescribeEvent{
+  n={24},
+  event={Заключение Иоанна Предтечи в темницу},
+  Mat={\bibref[14:3--5]{Mat 14:3}},
+  Mar={\bibref[6:17--20]{Mar 6:17}},
+  Luk={\bibref[3:19--20]{Luk 3:19}},
+  Joh={}
+}
+\hline
+\EventHeader{События по пути из Иудеи в Галилею}
+\hline
+\DescribeEvent{
+  n={25},
+  event={Возвращение в Галилею},
+  Mat={\bibref[4:12--17]{Mat 4:12}},
+  Mar={},
+  Luk={},
+  Joh={\bibref[4:1--3]{Joh 4:1}}
+}
+\DescribeEvent{
+  n={},
+  event={Беседа с самарянкой},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[4:4--42]{Joh 4:4}}
+}
+\hline
+\EventHeader{Служение Иисуса Христа в Галилее}
+\hline
+\DescribeEvent{
+  n={26},
+  event={Приход Иисуса Христа в Кану галилейскую; исцеление сына капернаумского царедворца},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[4:43--54]{Joh 4:43}}
+}
+\DescribeEvent{
+  n={27},
+  event={Начало Евангельской проповеди},
+  Mat={},
+  Mar={\bibref[1:14--15]{Mar 1:14}},
+  Luk={\bibref[4:14--15]{Luk 4:14}},
+  Joh={}
+}
+\DescribeEvent{
+  n={28},
+  event={Проповедь Иисуса Христа в назаретской синагоге},
+  Mat={},
+  Mar={},
+  Luk={\bibref[4:16--30]{Luk 4:16}},
+  Joh={}
+}
+\DescribeEvent{
+  n={29},
+  event={Поселение и проповедь в Капернауме},
+  Mat={\bibref[4:13--16]{Mat 4:13}},
+  Mar={\bibref[1:21]{Mar 1:21}},
+  Luk={\bibref[4:31--32]{Luk 4:31}},
+  Joh={}
+}
+\DescribeEvent{
+  n={30},
+  event={Призвание к апостольству Петра, Андрея, Иакова и Иоанна},
+  Mat={\bibref[4:18--22]{Mat 4:18}},
+  Mar={\bibref[1:16--20]{Mar 1:16}},
+  Luk={\bibref[5:1--11]{Luk 5:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={31},
+  event={Исцеление бесноватого в капернаумской синагоге},
+  Mat={},
+  Mar={\bibref[1:21--28]{Mar 1:21}},
+  Luk={\bibref[4:31--37]{Luk 4:31}},
+  Joh={}
+}
+\DescribeEvent{
+  n={32},
+  event={Исцеление тещи Симона},
+  Mat={},
+  Mar={\bibref[1:29--31]{Mar 1:29}},
+  Luk={\bibref[4:38--39]{Luk 4:38}},
+  Joh={}
+}
+\DescribeEvent{
+  n={33},
+  event={Исцеление многих больных},
+  Mat={\bibref[8:16--17]{Mat 8:16}},
+  Mar={\bibref[1:32--34]{Mar 1:32}},
+  Luk={\bibref[4:40--41]{Luk 4:40}},
+  Joh={}
+}
+\DescribeEvent{
+  n={34},
+  event={Благовестие в Галилее},
+  Mat={\bibref[4:23--25]{Mat 4:23}},
+  Mar={\bibref[1:35--39]{Mar 1:35}},
+  Luk={\bibref[4:42--44]{Luk 4:42}},
+  Joh={}
+}
+\DescribeEvent{
+  n={35},
+  event={Исцеление прокаженного},
+  Mat={\bibref[8:2--4]{Mat 8:2}},
+  Mar={\bibref[1:40--45]{Mar 1:40}},
+  Luk={\bibref[5:12--16]{Luk 5:12}},
+  Joh={}
+}
+\DescribeEvent{
+  n={36},
+  event={Исцеление расслабленного в Капернауме},
+  Mat={\bibref[9:1--8]{Mat 9:1}},
+  Mar={\bibref[2:1--12]{Mar 2:1}},
+  Luk={\bibref[5:17--26]{Luk 5:17}},
+  Joh={}
+}
+\DescribeEvent{
+  n={37},
+  event={Призвание Левия-Матфея к апостольству},
+  Mat={\bibref[9:9--13]{Mat 9:9}},
+  Mar={\bibref[2:13--17]{Mar 2:13}},
+  Luk={\bibref[5:27--32]{Luk 5:27}},
+  Joh={}
+}
+\DescribeEvent{
+  n={38},
+  event={Ответ ученикам Иоанна о посте},
+  Mat={\bibref[9:14--17]{Mat 9:14}},
+  Mar={\bibref[2:18--22]{Mar 2:18}},
+  Luk={\bibref[5:33--39]{Luk 5:33}},
+  Joh={}
+}
+\hline
+\EventHeaderCap{Служение Господа Иисуса Христа от второй пасхи до третьей}
+\EventHeader{События в Иудее}
+\hline
+\DescribeEvent{
+  n={39},
+  event={Иисус Христос в Иерусалиме на второй Пасхе. Исцеление расслабленного при Овчей купели},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[5:1--17]{Joh 5:1}}
+}
+\DescribeEvent{
+  n={40},
+  event={Откровение Иисуса Христа о Своем Богосыновстве},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[5:17--47]{Joh 5:17}}
+}
+\hline
+\EventHeader{Проповедь и чудеса Иисуса Христа в Галилее}
+\hline
+\DescribeEvent{
+  n={41},
+  event={О значении субботы; срывание колосьев},
+  Mat={\bibref[12:1--8]{Mat 12:1}},
+  Mar={\bibref[2:23--28]{Mar 2:23}},
+  Luk={\bibref[6:1--5]{Luk 6:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={42},
+  event={Исцеление сухорукого},
+  Mat={\bibref[12:9--13]{Mat 12:9}},
+  Mar={\bibref[3:1--5]{Mar 3:1}},
+  Luk={\bibref[6:6--11]{Luk 6:6}},
+  Joh={}
+}
+\DescribeEvent{
+  n={43},
+  event={Злоба фарисеев и стремление народа к Иисусу},
+  Mat={\bibref[12:14--21]{Mat 12:14}},
+  Mar={\bibref[3:6--12]{Mar 3:6}},
+  Luk={\bibref[6:11]{Luk 6:11}, \bibref[17--19]{Luk 6:17}},
+  Joh={}
+}
+\DescribeEvent{
+  n={44},
+  event={Избрание 12 апостолов},
+  Mat={\bibref[10:1--4]{Mat 10:1}},
+  Mar={\bibref[3:13--19]{Mar 3:13}},
+  Luk={\bibref[6:12--16]{Luk 6:12}},
+  Joh={}
+}
+\DescribeEvent{
+  n={45},
+  event={Нагорная проповедь},
+  Mat={\bibref[5:1--7:29]{Mat 5:1}},
+  Mar={},
+  Luk={\bibref[6:17--49]{Luk 6:17}},
+  Joh={}
+}
+\DescribeEvent{
+  n={46},
+  event={Исцеление слуги капернаумского сотника},
+  Mat={\bibref[8:5--13]{Mat 8:5}},
+  Mar={},
+  Luk={\bibref[7:1--10]{Luk 7:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={47},
+  event={Воскрешение сына вдовы в Наине},
+  Mat={},
+  Mar={},
+  Luk={\bibref[7:11--17]{Luk 7:11}},
+  Joh={}
+}
+\DescribeEvent{
+  n={48},
+  event={Свидетельство Иисуса о Себе и об Иоанне Крестителе пред Иоанновыми учениками},
+  Mat={\bibref[11:1--19]{Mat 11:1}},
+  Mar={},
+  Luk={\bibref[7:18--35]{Luk 7:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={49},
+  event={Призыв труждающихся и обремененных},
+  Mat={\bibref[11:27--30]{Mat 11:27}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={50},
+  event={Прощение грешницы в доме фарисея Симона},
+  Mat={},
+  Mar={},
+  Luk={\bibref[7:36--50]{Luk 7:36}},
+  Joh={}
+}
+\DescribeEvent{
+  n={51},
+  event={Исцеление бесноватого глухонемого слепца},
+  Mat={\bibref[12:22--23]{Mat 12:22}},
+  Mar={},
+  Luk={\bibref[11:14]{Luk 11:14}},
+  Joh={}
+}
+\DescribeEvent{
+  n={52},
+  event={Изобличение хулы на Духа Святого},
+  Mat={\bibref[12:24--37]{Mat 12:24}},
+  Mar={\bibref[3:20--30]{Mar 3:20}},
+  Luk={\bibref[11:15--26]{Luk 11:15}},
+  Joh={}
+}
+\DescribeEvent{
+  n={53},
+  event={О требовании знамения},
+  Mat={\bibref[12:38--45]{Mat 12:38}},
+  Mar={},
+  Luk={\bibref[11:16]{Luk 11:16}, \bibref[29--32]{Luk 11:29}},
+  Joh={}
+}
+\DescribeEvent{
+  n={54},
+  event={О внутреннем свете},
+  Mat={},
+  Mar={},
+  Luk={\bibref[11:33--36]{Luk 11:33}},
+  Joh={}
+}
+\DescribeEvent{
+  n={55},
+  event={Похвала слушающим слово Божие},
+  Mat={\bibref[12:46--50]{Mat 12:46}},
+  Mar={\bibref[3:31--35]{Mar 3:31}},
+  Luk={\bibref[8:19--21]{Luk 8:19}, \bibref[11:27--28]{Luk 11:27}},
+  Joh={}
+}
+\DescribeEvent{
+  n={56},
+  event={Изобличение внешней праведности},
+  Mat={},
+  Mar={},
+  Luk={\bibref[11:37--54]{Luk 11:37}},
+  Joh={}
+}
+\DescribeEvent{
+  n={57},
+  event={Учение при море притчами о Царствии Божием},
+  Mat={\bibref[13:1--58]{Mat 13:1}},
+  Mar={\bibref[4:1--34]{Mar 4:1}},
+  Luk={\bibref[12:1--59]{Luk 12:1}, \bibref[8:4--18]{Luk 8:4}, \bibref[13:18--21]{Luk 13:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={58},
+  event={О последовании Иисусу},
+  Mat={\bibref[8:18--22]{Mat 8:18}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={59},
+  event={Укрощение бури на пути через Геннисаретское озеро в Гадаринскую страну},
+  Mat={\bibref[8:23--27]{Mat 8:23}},
+  Mar={\bibref[4:35--41]{Mar 4:35}},
+  Luk={\bibref[8:22--25]{Luk 8:22}},
+  Joh={}
+}
+\DescribeEvent{
+  n={60},
+  event={Исцеление бесноватых в Гадаринской стране},
+  Mat={\bibref[8:28--31]{Mat 8:28}},
+  Mar={\bibref[5:1--20]{Mar 5:1}},
+  Luk={\bibref[8:26--39]{Luk 8:26}},
+  Joh={}
+}
+\DescribeEvent{
+  n={61},
+  event={Воскрешение дочери Иаира, исцеление кровоточивой больной},
+  Mat={},
+  Mar={\bibref[5:22--43]{Mar 5:22}},
+  Luk={\bibref[8:40--56]{Luk 8:40}},
+  Joh={}
+}
+\DescribeEvent{
+  n={62},
+  event={Исцеление двух слепцов},
+  Mat={\bibref[9:27--31]{Mat 9:27}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={63},
+  event={Исцеление бесноватого немого},
+  Mat={\bibref[9:32--34]{Mat 9:32}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={64},
+  event={Проповедь в назаретской синагоге},
+  Mat={\bibref[13:54--58]{Mat 13:54}},
+  Mar={\bibref[6:1--6]{Mar 6:1}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={65},
+  event={Проповедь в окрестных городах и селениях},
+  Mat={\bibref[9:35--38]{Mat 9:35}},
+  Mar={\bibref[6:6]{Mar 6:6}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={66},
+  event={Наставления 12 при послании их на проповедь},
+  Mat={\bibref[10:1--42]{Mat 10:1}},
+  Mar={\bibref[6:7--13]{Mar 6:7}},
+  Luk={\bibref[9:1--6]{Luk 9:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={67},
+  event={Смерть Иоанна Крестителя},
+  Mat={\bibref[14:6--12]{Mat 14:6}},
+  Mar={\bibref[6:17--29]{Mar 6:17}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={68},
+  event={Молва об Иисусе Христе, смятение Ирода},
+  Mat={\bibref[14:1--2]{Mat 14:1}},
+  Mar={\bibref[6:14--16]{Mar 6:14}},
+  Luk={\bibref[9:7--9]{Luk 9:7}},
+  Joh={}
+}
+\DescribeEvent{
+  n={69},
+  event={Возвращение 12 с проповеди},
+  Mat={},
+  Mar={\bibref[6:30]{Mar 6:30}},
+  Luk={\bibref[9:10]{Luk 9:10}},
+  Joh={}
+}
+\DescribeEvent{
+  n={70},
+  event={Насыщение 5000 народа пятью хлебами и двумя рыбами},
+  Mat={\bibref[14:13--21]{Mat 14:13}},
+  Mar={\bibref[6:31--44]{Mar 6:31}},
+  Luk={\bibref[9:11--17]{Luk 9:11}},
+  Joh={\bibref[6:1--14]{Joh 6:1}}
+}
+\DescribeEvent{
+  n={71},
+  event={Шествие Иисуса Христа к ученикам по воде},
+  Mat={\bibref[14:22--34]{Mat 14:22}},
+  Mar={\bibref[6:45--53]{Mar 6:45}},
+  Luk={},
+  Joh={\bibref[6:15--21]{Joh 6:15}}
+}
+\DescribeEvent{
+  n={72},
+  event={Исцеление больных в Геннисаретской стране},
+  Mat={\bibref[14:35--36]{Mat 14:35}},
+  Mar={\bibref[6:54--56]{Mar 6:54}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={73},
+  event={Беседа Иисуса Христа о небесном хлебе},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[6:22--71]{Joh 6:22}}
+}
+\hline
+\EventHeaderCap{События от третьей пасхи до четвертой --- пасхи страданий}
+\hline
+\DescribeEvent{
+  n={74},
+  event={Обличение иудеев в лицемерном исполнении заповедей},
+  Mat={},
+  Mar={\bibref[7:1--23]{Mar 7:1}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={75},
+  event={Путешествие Иисуса Христа в пределы Тира и Сидона, исцеление дочери хананеянки},
+  Mat={\bibref[15:21--28]{Mat 15:21}},
+  Mar={\bibref[7:24--30]{Mar 7:24}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={76},
+  event={Исцеление глухонемого},
+  Mat={},
+  Mar={\bibref[7:31--37]{Mar 7:31}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={77},
+  event={Исцеление множества народа у Геннисаретского озера},
+  Mat={\bibref[15:29--31]{Mat 15:29}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={78},
+  event={Насыщение 4000 семью хлебами и несколькими рыбами},
+  Mat={\bibref[15:32--38]{Mat 15:32}},
+  Mar={\bibref[8:1--9]{Mar 8:1}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={79},
+  event={Прибытие в страну Магдалинскую. Ответ фарисеям просившим знамения с неба},
+  Mat={\bibref[15:39--16:4]{Mat 15:39}},
+  Mar={\bibref[8:10--13]{Mar 8:10}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={80},
+  event={Предостережение ученикам от закваски фарисейской},
+  Mat={\bibref[15:1--12]{Mat 15:1}},
+  Mar={\bibref[8:14--21]{Mar 8:14}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={81},
+  event={Исцеление слепого в Вифсаиде},
+  Mat={},
+  Mar={\bibref[8:22--26]{Mar 8:22}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={82},
+  event={Исповедание Петра у Кесарии Филипповой},
+  Mat={\bibref[16:13--20]{Mat 16:13}},
+  Mar={\bibref[8:27--30]{Mar 8:27}},
+  Luk={\bibref[9:18--21]{Luk 9:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={83},
+  event={Первое предсказание Иисуса Христа о крестных страданиях; наставление о несении креста},
+  Mat={\bibref[16:21--28]{Mat 16:21}},
+  Mar={\bibref[8:31--9:1]{Mar 8:31}},
+  Luk={\bibref[9:22--27]{Luk 9:22}},
+  Joh={}
+}
+\DescribeEvent{
+  n={84},
+  event={Преображение Господне},
+  Mat={\bibref[17:1--13]{Mat 17:1}},
+  Mar={\bibref[9:1--9]{Mar 9:1}},
+  Luk={\bibref[9:28--36]{Luk 9:28}},
+  Joh={}
+}
+\DescribeEvent{
+  n={85},
+  event={Второе предсказание Иисуса Христа о крестных страданиях},
+  Mat={},
+  Mar={\bibref[9:10--13]{Mar 9:10}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={86},
+  event={Исцеление бесноватого лунатика},
+  Mat={\bibref[17:14--21]{Mat 17:14}},
+  Mar={\bibref[9:14--29]{Mar 9:14}},
+  Luk={\bibref[9:37--43]{Luk 9:37}},
+  Joh={}
+}
+\DescribeEvent{
+  n={87},
+  event={Третье предсказание Иисуса Христа о крестных страданиях},
+  Mat={\bibref[17:22--23]{Mat 17:22}},
+  Mar={\bibref[9:30--32]{Mar 9:30}},
+  Luk={\bibref[9:43--45]{Luk 9:43}},
+  Joh={}
+}
+\DescribeEvent{
+  n={88},
+  event={Последнее пребывание Господа Иисуса Христа в Капернауме; ответ Иисуса Христа о подати на храм},
+  Mat={\bibref[17:24--27]{Mat 17:24}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={89},
+  event={Наставление о смирении},
+  Mat={\bibref[18:1--6]{Mat 18:1}},
+  Mar={\bibref[9:33--37]{Mar 9:33}},
+  Luk={\bibref[9:46--50]{Luk 9:46}},
+  Joh={}
+}
+\DescribeEvent{
+  n={90},
+  event={Речь о спасении погибающих, притча о пропавшей овце},
+  Mat={\bibref[18:7--17]{Mat 18:7}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={91},
+  event={Учение о прощении грехов ближнего},
+  Mat={\bibref[18:18--22]{Mat 18:18}, \bibref[18:23--35]{Mat 18:23}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\hline
+\EventHeader{Господь Иисус Христос в Галилее пред праздником Кущей}
+\hline
+\DescribeEvent{
+  n={92},
+  event={Отказ Иисуса Христа идти на праздник в Иерусалим},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[7:2--9]{Joh 7:2}}
+}
+\DescribeEvent{
+  n={93},
+  event={Путешествие Иисуса Христа в Иерусалим},
+  Mat={\bibref[19:1]{Mat 19:1}},
+  Mar={\bibref[10:1]{Mar 10:1}},
+  Luk={\bibref[9:51]{Luk 9:51}},
+  Joh={}
+}
+\DescribeEvent{
+  n={94},
+  event={Неприязненное отношение к Иисусу Христу самарийцев},
+  Mat={},
+  Mar={},
+  Luk={\bibref[9:52--56]{Luk 9:52}},
+  Joh={}
+}
+\DescribeEvent{
+  n={95},
+  event={Ответ Господа Иисуса Христа пожелавшим следовать за Ним},
+  Mat={},
+  Mar={},
+  Luk={\bibref[9:57--62]{Luk 9:57}},
+  Joh={}
+}
+\DescribeEvent{
+  n={96},
+  event={Послание 70 на проповедь; укор городам не принявшим проповеди},
+  Mat={\bibref[11:20--24]{Mat 11:20}},
+  Mar={},
+  Luk={\bibref[10:1--24]{Luk 10:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={97},
+  event={Призыв труждающихся и обремененных},
+  Mat={\bibref[11:27--30]{Mat 11:27}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={98},
+  event={Вопрос законника о вечной жизни и о ближнем и притча о милосердном самарянине},
+  Mat={},
+  Mar={},
+  Luk={\bibref[10:25--37]{Luk 10:25}},
+  Joh={}
+}
+\DescribeEvent{
+  n={99},
+  event={Иисус Христос в доме Марфы и Марии},
+  Mat={},
+  Mar={},
+  Luk={\bibref[10:38--42]{Luk 10:38}},
+  Joh={}
+}
+\DescribeEvent{
+  n={100},
+  event={Учение Иисуса Христа о молитве},
+  Mat={},
+  Mar={},
+  Luk={\bibref[11:1--13]{Luk 11:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={101},
+  event={Иисус на обеде у фарисея: обличение законников},
+  Mat={},
+  Mar={},
+  Luk={\bibref[11:37--54]{Luk 11:37}},
+  Joh={}
+}
+\DescribeEvent{
+  n={102},
+  event={Наставления о правилах жизни Христовым последователям},
+  Mat={},
+  Mar={},
+  Luk={\bibref[12:1--59]{Luk 12:1}},
+  Joh={}
+}
+\hline
+\EventHeader{Иисус Христос в Иерусалиме на празднике Кущей}
+\hline
+\DescribeEvent{
+  n={103},
+  event={Спор в народе о Христе},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[7:10--53]{Joh 7:10}}
+}
+\DescribeEvent{
+  n={104},
+  event={О женщине взятой в прелюбодеянии},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[8:1--11]{Joh 8:1}}
+}
+\DescribeEvent{
+  n={105},
+  event={Обличение иудеев при сокровищнице храма},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[8:12--59]{Joh 8:12}}
+}
+\DescribeEvent{
+  n={106},
+  event={Исцеление слепорожденного},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[9:1--41]{Joh 9:1}}
+}
+\DescribeEvent{
+  n={107},
+  event={<<Пастырь добрый>>},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[10:1--21]{Joh 10:1}}
+}
+\DescribeEvent{
+  n={108},
+  event={Известие об избитых Пилатом галилеянах, наставление о покаянии},
+  Mat={},
+  Mar={},
+  Luk={\bibref[13:1--5]{Luk 13:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={109},
+  event={Притча о бесплодной смоковнице},
+  Mat={},
+  Mar={},
+  Luk={\bibref[13:6--9]{Luk 13:6}},
+  Joh={}
+}
+\DescribeEvent{
+  n={110},
+  event={Исцеление в синагоге в субботу женщины согбенной 18 лет},
+  Mat={},
+  Mar={},
+  Luk={\bibref[13:10--17]{Luk 13:10}},
+  Joh={}
+}
+\DescribeEvent{
+  n={111},
+  event={Учение Иисуса Христа о Царствии Божием в притчах},
+  Mat={},
+  Mar={},
+  Luk={\bibref[13:18--21]{Luk 13:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={112},
+  event={Беседа Иисуса Христа в праздник Обновления в притворе Соломоновом},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[10:22--39]{Joh 10:22}}
+}
+\DescribeEvent{
+  n={113},
+  event={Удаление Господа Иисуса Христа из Иерусалима в заиорданскую страну Перею},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[10:40--42]{Joh 10:40}}
+}
+\hline
+\EventHeader{Учение Господа Иисуса Христа на обратном пути из заиорданской страны в Иерусалим}
+\hline
+\DescribeEvent{
+  n={114},
+  event={Речь Иисуса Христа о числе спасающихся},
+  Mat={},
+  Mar={},
+  Luk={\bibref[18:22--30]{Luk 18:22}},
+  Joh={}
+}
+\DescribeEvent{
+  n={115},
+  event={Предсказание о страданиях в Иерусалиме},
+  Mat={},
+  Mar={},
+  Luk={\bibref[13:31--35]{Luk 13:31}},
+  Joh={}
+}
+\DescribeEvent{
+  n={116},
+  event={Иисус Христос на обеде у фарисея; исцеление больного водянкой; притча о званых на вечерю},
+  Mat={},
+  Mar={},
+  Luk={\bibref[14:1--24]{Luk 14:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={117},
+  event={Самоотвержение последователей Христа},
+  Mat={},
+  Mar={},
+  Luk={\bibref[14:25--35]{Luk 14:25}},
+  Joh={}
+}
+\DescribeEvent{
+  n={118},
+  event={Притчи о погибшей овце, потерянной драхме и блудном сыне},
+  Mat={},
+  Mar={},
+  Luk={\bibref[15:1--32]{Luk 15:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={119},
+  event={О неверном домоправителе},
+  Mat={},
+  Mar={},
+  Luk={\bibref[16:1--13]{Luk 16:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={120},
+  event={Обличение фарисеев; притча о богаче и Лазаре},
+  Mat={},
+  Mar={},
+  Luk={\bibref[16:14--31]{Luk 16:14}},
+  Joh={}
+}
+\DescribeEvent{
+  n={121},
+  event={Наставление ученикам о исполнении долга},
+  Mat={},
+  Mar={},
+  Luk={\bibref[17:1--10]{Luk 17:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={122},
+  event={Исцеление десяти прокаженных},
+  Mat={},
+  Mar={},
+  Luk={\bibref[17:11--19]{Luk 17:11}},
+  Joh={}
+}
+\DescribeEvent{
+  n={123},
+  event={Ответ о втором пришествии},
+  Mat={},
+  Mar={},
+  Luk={\bibref[17:20--37]{Luk 17:20}},
+  Joh={}
+}
+\DescribeEvent{
+  n={124},
+  event={Притча о несправедливом судье},
+  Mat={},
+  Mar={},
+  Luk={\bibref[18:1--8]{Luk 18:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={125},
+  event={Притча о мытаре и фарисее},
+  Mat={},
+  Mar={},
+  Luk={\bibref[18:9--14]{Luk 18:9}},
+  Joh={}
+}
+\DescribeEvent{
+  n={126},
+  event={Учение о браке},
+  Mat={\bibref[19:1--12]{Mat 19:1}},
+  Mar={\bibref[10:1--12]{Mar 10:1}},
+  Luk={\bibref[16:18]{Luk 16:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={127},
+  event={Благословение детей},
+  Mat={\bibref[19:13--15]{Mat 19:13}},
+  Mar={\bibref[10:13--16]{Mar 10:13}},
+  Luk={\bibref[18:15--17]{Luk 18:15}},
+  Joh={}
+}
+\DescribeEvent{
+  n={128},
+  event={Ответ богатому юноше},
+  Mat={\bibref[19:16--26]{Mat 19:16}},
+  Mar={\bibref[10:17--27]{Mar 10:17}},
+  Luk={\bibref[18:18--27]{Luk 18:18}},
+  Joh={}
+}
+\DescribeEvent{
+  n={129},
+  event={Вопрос Петра о награде последователям Иисуса Христа},
+  Mat={\bibref[19:27--30]{Mat 19:27}},
+  Mar={\bibref[10:28--31]{Mar 10:28}},
+  Luk={\bibref[18:28--30]{Luk 18:28}},
+  Joh={}
+}
+\DescribeEvent{
+  n={130},
+  event={Притча о нанятых в виноградник работниках},
+  Mat={\bibref[20:1--16]{Mat 20:1}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={131},
+  event={Воскрешение Лазаря},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[11:1--46]{Joh 11:1}}
+}
+\DescribeEvent{
+  n={132},
+  event={Заговор начальников иудейских против Иисуса Христа},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[11:47--57]{Joh 11:47}}
+}
+\DescribeEvent{
+  n={133},
+  event={Предсказание Иисуса Христа о крестных страданиях на пути к Иерусалиму},
+  Mat={\bibref[20:17--19]{Mat 20:17}},
+  Mar={\bibref[10:32--34]{Mar 10:32}},
+  Luk={\bibref[18:31--34]{Luk 18:31}},
+  Joh={}
+}
+\DescribeEvent{
+  n={134},
+  event={Просьба сынов Зеведеевых о месте в Царствии Иисуса Христа},
+  Mat={\bibref[20:20--28]{Mat 20:20}},
+  Mar={\bibref[10:35--45]{Mar 10:35}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={135},
+  event={Иисус Христос в Иерихоне; исцеление слепцов},
+  Mat={\bibref[20:29--34]{Mat 20:29}},
+  Mar={\bibref[10:46--52]{Mar 10:46}},
+  Luk={\bibref[18:35--43]{Luk 18:35}},
+  Joh={}
+}
+\DescribeEvent{
+  n={136},
+  event={Обращение Закхея},
+  Mat={},
+  Mar={},
+  Luk={\bibref[19:1--10]{Luk 19:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={137},
+  event={Притча об ушедшем на войну и об умноживших таланты},
+  Mat={\bibref[25:13--30]{Mat 25:13}},
+  Mar={},
+  Luk={\bibref[19:11--28]{Luk 19:11}},
+  Joh={}
+}
+\DescribeEvent{
+  n={138},
+  event={Иисус Христос в Вифании},
+  Mat={\bibref[26:6--13]{Mat 26:6}},
+  Mar={\bibref[14:3--9]{Mar 14:3}},
+  Luk={},
+  Joh={\bibref[11:55--12:11]{Joh 11:55}}
+}
+\DescribeEvent{
+  n={139},
+  event={Вход Господень в Иерусалим; исцеление больных в Иерусалиме},
+  Mat={\bibref[21:1--11]{Mat 21:1}, \bibref[14--17]{Mat 21:14}},
+  Mar={\bibref[11:1--11]{Mar 11:1}},
+  Luk={\bibref[19:29--44]{Luk 19:29}},
+  Joh={\bibref[12:12--19]{Joh 12:12}}
+}
+\hline
+\EventHeader{Великий понедельник}
+\hline
+\DescribeEvent{
+  n={140},
+  event={Бесплодная смоковница},
+  Mat={\bibref[21:18--22]{Mat 21:18}},
+  Mar={\bibref[11:12--14]{Mar 11:12}, \bibref[20--26]{Mar 11:20}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={141},
+  event={Изгнание торгующих из храма},
+  Mat={\bibref[21:12--13]{Mat 21:12}},
+  Mar={\bibref[11:15--19]{Mar 11:15}},
+  Luk={\bibref[19:45--46]{Luk 19:45}},
+  Joh={}
+}
+\hline
+\EventHeader{Великий вторник}
+\hline
+\DescribeEvent{
+  n={142},
+  event={Обличение начальников иудейских и поучения Господа в храме},
+  Mat={\bibref[21:23--23:39]{Mat 21:23}},
+  Mar={\bibref[11:27--12:40]{Mar 11:27}},
+  Luk={\bibref[19:47--20:47]{Luk 19:47}},
+  Joh={}
+}
+\DescribeEvent{
+  n={143},
+  event={О жертве бедной вдовицы},
+  Mat={},
+  Mar={\bibref[12:41--44]{Mar 12:41}},
+  Luk={\bibref[21:1--4]{Luk 21:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={144},
+  event={Речь Иисуса Христа пред эллинами и иудеями},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[12:20--50]{Joh 12:20}}
+}
+\DescribeEvent{
+  n={145},
+  event={Пророчества и притчи Иисуса Христа о Иерусалиме и о втором пришествии},
+  Mat={\bibref[24:1--25:46]{Mat 24:1}},
+  Mar={\bibref[13:1--37]{Mar 13:1}},
+  Luk={\bibref[21:5--38]{Luk 21:5}},
+  Joh={}
+}
+\hline
+\EventHeader{Великая среда}
+\hline
+\DescribeEvent{
+  n={146},
+  event={Иисус Христос в Вифании},
+  Mat={\bibref[26:1--2]{Mat 26:1}, \bibref[6--13]{Mat 26:6}},
+  Mar={\bibref[14:3--9]{Mar 14:3}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={147},
+  event={Заговор иудеев, предательство Иуды},
+  Mat={\bibref[26:3--5]{Mat 26:3}, \bibref[14--16]{Mat 26:14}},
+  Mar={\bibref[14:1--2]{Mar 14:1}, \bibref[10--11]{Mar 14:10}},
+  Luk={\bibref[22:1--6]{Luk 22:1}},
+  Joh={}
+}
+\hline
+\EventHeader{Великий четверг}
+\hline
+\DescribeEvent{
+  n={148},
+  event={Пасхальная вечеря},
+  Mat={\bibref[26:17--35]{Mat 26:17}},
+  Mar={\bibref[14:12--31]{Mar 14:12}},
+  Luk={\bibref[22:7--38]{Luk 22:7}},
+  Joh={\bibref[13:1--17]{Joh 13:1}, \bibref[26]{Joh 13:26}}
+}
+\DescribeEvent{
+  n={149},
+  event={Моление о чаше},
+  Mat={\bibref[26:36--46]{Mat 26:36}},
+  Mar={\bibref[14:32--42]{Mar 14:32}},
+  Luk={\bibref[22:39--46]{Luk 22:39}},
+  Joh={\bibref[18:1]{Joh 18:1}}
+}
+\hline
+\EventHeader{Великая пятница}
+\hline
+\DescribeEvent{
+  n={150},
+  event={Взятие Иисуса Христа под стражу},
+  Mat={\bibref[26:47--56]{Mat 26:47}},
+  Mar={\bibref[14:43--52]{Mar 14:43}},
+  Luk={\bibref[22:47--53]{Luk 22:47}},
+  Joh={\bibref[18:2--12]{Joh 18:2}}
+}
+\DescribeEvent{
+  n={151},
+  event={Допрос Иисуса Христа у Анны},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[18:13]{Joh 18:13}, \bibref[19--24]{Joh 18:19}}
+}
+\DescribeEvent{
+  n={152},
+  event={Суд Синедриона над Иисусом Христом у Каиафы},
+  Mat={\bibref[26:57--68]{Mat 26:57}},
+  Mar={\bibref[14:53--65]{Mar 14:53}},
+  Luk={\bibref[22:54]{Luk 22:54}, \bibref[63--65]{Luk 22:63}},
+  Joh={\bibref[18:14]{Joh 18:14}}
+}
+\DescribeEvent{
+  n={153},
+  event={Отречение Петра},
+  Mat={\bibref[26:58]{Mat 26:58}, \bibref[69--75]{Mat 26:69}},
+  Mar={\bibref[14:54]{Mar 14:54}, \bibref[66--72]{Mar 14:66}},
+  Luk={\bibref[22:54--62]{Luk 22:54}},
+  Joh={\bibref[18:15--18]{Joh 18:15}, \bibref[25--27]{Joh 18:25}}
+}
+\DescribeEvent{
+  n={154},
+  event={Приговор Синедриона},
+  Mat={\bibref[27:1]{Mat 27:1}},
+  Mar={\bibref[15:1]{Mar 15:1}},
+  Luk={\bibref[22:66--71]{Luk 22:66}},
+  Joh={}
+}
+\DescribeEvent{
+  n={155},
+  event={Конец Иуды},
+  Mat={\bibref[27:3--10]{Mat 27:3}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={156},
+  event={Иисус Христос у Пилата},
+  Mat={\bibref[27:2--31]{Mat 27:2}},
+  Mar={\bibref[15:1--20]{Mar 15:1}},
+  Luk={\bibref[23:1--25]{Luk 23:1}},
+  Joh={\bibref[18:28--19:16]{Joh 18:28}}
+}
+\DescribeEvent{
+  n={157},
+  event={Крестный путь и Голгофа},
+  Mat={\bibref[27:31--56]{Mat 27:31}},
+  Mar={\bibref[15:20--41]{Mar 15:20}},
+  Luk={\bibref[23:26--49]{Luk 23:26}},
+  Joh={\bibref[19:16--37]{Joh 19:16}}
+}
+\DescribeEvent{
+  n={158},
+  event={Погребение Иисуса Христа},
+  Mat={\bibref[27:57--66]{Mat 27:57}},
+  Mar={\bibref[15:42--47]{Mar 15:42}},
+  Luk={\bibref[23:50--56]{Luk 23:50}},
+  Joh={\bibref[19:38--42]{Joh 19:38}}
+}
+\hline
+\EventHeaderCap{Воскресение Иисуса Христа}
+\EventHeader{Утро Воскресения}
+\hline
+\DescribeEvent{
+  n={159},
+  event={Поздно в субботу Мария Магдалина с другой Марией идут смотреть гроб},
+  Mat={\bibref[28:1]{Mat 28:1}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={160},
+  event={Мария Магдалина и другие женщины покупают ароматы чтобы утром помазать Иисуса},
+  Mat={},
+  Mar={\bibref[16:1]{Mar 16:1}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={161},
+  event={Землетрясение, ангел отваливает камень от пещеры},
+  Mat={\bibref[28:2--4]{Mat 28:2}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={162},
+  event={Мария Магдалина спешит ко гробу. Увидев, что он пуст, она возвращается к Петру и Иоанну},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[20:1--3]{Joh 20:1}}
+}
+\DescribeEvent{
+  n={163},
+  event={Приход ко гробу до восхода солнца группы галилейских жен-мироносиц; явление им ангелов},
+  Mat={},
+  Mar={},
+  Luk={\bibref[24:1--9]{Luk 24:1}},
+  Joh={}
+}
+\DescribeEvent{
+  n={164},
+  event={Петр и Иоанн с Марией Магдалиной прибегают к пустому гробу},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[20:4--10]{Joh 20:4}}
+}
+\DescribeEvent{
+  n={165},
+  event={Явление Воскресшего Христа Марии Магдалине},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[20:11--18]{Joh 20:11}}
+}
+\DescribeEvent{
+  n={166},
+  event={Приход на гроб при восходе солнца другой группы жен-мироносиц; явление им ангела},
+  Mat={\bibref[28:5--8]{Mat 28:5}},
+  Mar={\bibref[16:1--8]{Mar 16:1}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={167},
+  event={Уход мироносиц от гроба; явление им Воскресшего Христа},
+  Mat={\bibref[28:9--10]{Mat 28:9}},
+  Mar={},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={168},
+  event={Извещение учеников о Воскресении Господа группой галилейских жен-мироносиц},
+  Mat={},
+  Mar={\bibref[16:8]{Mar 16:8}},
+  Luk={\bibref[24:9--12]{Luk 24:9}},
+  Joh={}
+}
+\DescribeEvent{
+  n={169},
+  event={Извещение учеников о Воскресении Господа Марией Магдалиной},
+  Mat={},
+  Mar={\bibref[16:9--11]{Mar 16:9}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={170},
+  event={Явление Иисуса Христа Эммаусским путникам},
+  Mat={},
+  Mar={\bibref[16:12--13]{Mar 16:12}},
+  Luk={\bibref[24:13--35]{Luk 24:13}},
+  Joh={}
+}
+\DescribeEvent{
+  n={171},
+  event={Явление Иисуса Христа в первый день недели ученикам без Фомы},
+  Mat={},
+  Mar={\bibref[16:14]{Mar 16:14}},
+  Luk={\bibref[24:36--49]{Luk 24:36}},
+  Joh={\bibref[20:19--25]{Joh 20:19}}
+}
+\DescribeEvent{
+  n={172},
+  event={Явление Иисуса Христа по прошествии восьми дней},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[20:26--29]{Joh 20:26}}
+}
+\DescribeEvent{
+  n={173},
+  event={Явление Иисуса Христа при море Тивериадском},
+  Mat={},
+  Mar={},
+  Luk={},
+  Joh={\bibref[21:1--25]{Joh 21:1}}
+}
+\DescribeEvent{
+  n={174},
+  event={Явление Иисуса Христа на горе},
+  Mat={\bibref[28:16--20]{Mat 28:16}},
+  Mar={\bibref[16:15--18]{Mar 16:15}},
+  Luk={},
+  Joh={}
+}
+\DescribeEvent{
+  n={175},
+  event={Вознесение Господа},
+  Mat={},
+  Mar={\bibref[16:19--20]{Mar 16:19}},
+  Luk={\bibref[24:50--53]{Luk 24:50}},
+  Joh={}
+}
+\end{longtable}
+\end{landscape}
