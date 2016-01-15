@@ -7,6 +7,8 @@
 #
 
 MOD = russian-synodal-bible
+SRCDIR=tex
+SRCEXT=tex
 
 LATEX = xelatex -halt-on-error $(MOD) < /dev/null > /dev/null 2>&1
 
@@ -64,3 +66,10 @@ ifeq ($(SUBSET),yes)
 else
 	> select-book.tex
 endif
+
+exportsrc:
+	@> $(MOD).txt
+	@for b in $(BOOKS) ; \
+	do \
+		cat $(SRCDIR)/$$b.$(SRCEXT) >> $(MOD).txt ; \
+	done
