@@ -6,6 +6,7 @@
 # The above variables can be combined.
 #
 
+SHELL = /bin/bash
 MOD = russian-synodal-bible
 SRCDIR=tex
 SRCEXT=tex
