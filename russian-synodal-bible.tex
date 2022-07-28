@@ -12,10 +12,16 @@
 %\tunemarkuptag{pgletter}
 
 % 6" (9x12cm) Kindle ebook reader
-\tunemarkuptag{pghanlin}
+%\tunemarkuptag{pghanlin}
+
+% 10" colour device
+\tunemarkuptag{pgnexus10}
 
 \tunemarkup{pghanlin}{\RequirePackage[dvips,headheight=14pt,headsep=0pt,vmargin={0.2in},hmargin={0.1in},marginparsep=0pt,twoside=false,papersize={90mm,120mm}]{geometry}}
 \tunemarkup{pgletter}{\RequirePackage[dvips,headheight=20pt,headsep=8pt,vmargin={0.6in,0.5in},hmargin={0.5in},twoside=true,papersize={8.25in,10.75in}]{geometry}}
+
+% Google Nexus 10 (or any Android 10" colour device)
+\tunemarkup{pgnexus10}{\RequirePackage[dvips,headheight=20pt,headsep=1pt,vmargin={0.2in,0.15in},hmargin={0.1in},twoside=true,papersize={135.0mm,216mm}]{geometry}}
 
 \makeatletter
 % fix page dimentions in xelatex - can be dropped when geometry.sty
@@ -25,13 +31,15 @@
 
 %\tunemarkup{pghanlin}{\setmainfont[Mapping=tex-text,BoldFont=Garamond Premier Pro Bold]{Garamond Premier Pro}}
 %\newfontfamily\cyrillicfont[Mapping=tex-text]{Garamond Premier Pro}
-\tunemarkup{pgletter}{\setmainfont[Mapping=tex-text]{Minion Pro}}
+%\tunemarkup{pgletter}{\setmainfont[Mapping=tex-text]{Minion Pro}}
+\tunemarkup{pgletter}{\setmainfont[Mapping=tex-text]{Selina Extended}}
 
 %\tunemarkup{pghanlin}{\setmainfont[Mapping=tex-text,Script=Cyrillic]{Octava}}
 %\newfontfamily\cyrillicfont[Mapping=tex-text,Script=Cyrillic]{Octava}
 
 \tunemarkup{pghanlin}{\setmainfont[Mapping=tex-text,Script=Cyrillic]{Academy}}
-\newfontfamily\cyrillicfont[Mapping=tex-text,Script=Cyrillic]{Academy}
+%\newfontfamily\cyrillicfont[Mapping=tex-text,Script=Cyrillic]{Academy}
+\newfontfamily\cyrillicfont[Mapping=tex-text,Script=Cyrillic]{Selina Extended}
 
 \newfontfamily\engfont[Mapping=tex-text]{Linux Libertine O}
 \newfontfamily\armfont[Mapping=tex-text]{ArTarumianGrqiNor_U}
@@ -59,6 +67,7 @@
 
 \tunemarkup{pghanlin}{%
 \definecolor{ubdarkblue}{rgb}{0.0, 0.0, 0.0}
+\definecolor{ubdarkblue}{rgb}{0.0, 0.3, 0.6}
 \renewcommand{\bibtocheadfont}{\fontsize{11}{11}\scshape}
 \renewcommand{\bibtocfont}{\fontsize{8}{10}\selectfont}
 \renewcommand{\bibheadfont}{\normalsize\scshape\addfontfeature{Letters=SmallCaps,LetterSpace=2.0}}
@@ -69,12 +78,25 @@
 %\renewcommand{\Huge}{\fontsize{30}{24}\selectfont}
 }
 
+\tunemarkup{pgnexus10}{%
+\definecolor{ubdarkblue}{rgb}{0.0, 0.0, 0.0}
+\renewcommand{\bibtocheadfont}{\fontsize{11}{11}\scshape}
+\renewcommand{\bibtocfont}{\fontsize{8}{10}\selectfont}
+\renewcommand{\bibheadfont}{\normalsize\scshape\addfontfeature{Letters=SmallCaps,LetterSpace=2.0}}
+\renewcommand{\bibheadchapsize}{\bfseries\normalsize}
+\renewcommand{\bibheadversesize}{\bfseries\small}
+\renewcommand{\bibheadpagesize}{\bfseries\small}
+%\renewcommand{\LARGE}{\fontsize{26}{18}\selectfont}
+%\renewcommand{\Huge}{\fontsize{30}{24}\selectfont}
+}
+
+
 \renewcommand{\bibdropcapscolor}{ubdarkblue}
 
 \renewcommand{\bibmarnchfont}{\normalsize\bfseries\upshape}
-\renewcommand{\bibbookend}{\fontsize{15}{17}\selectfont}
-\newcommand{\bibmainfontsize}{15/17}
-\renewcommand{\footnotesize}{\fontsize{13}{15}\selectfont}
+\renewcommand{\bibbookend}{\fontsize{12}{17}\selectfont}
+\newcommand{\bibmainfontsize}{12/17}
+\renewcommand{\footnotesize}{\fontsize{11}{14}\selectfont}
 \renewcommand{\bibpage}{\tiny Стр.}
 \renewcommand{\bibpsalmname}{Псалом}
 \renewcommand{\bibchapname}{Глава}
@@ -83,6 +105,7 @@
 %\renewcommand{\bibcontname}{Оглавление}
 \renewcommand{\bibcontname}{Contents}
 \renewcommand{\bibtitlefont}{\large\scshape}
+\setcounter{DefaultLines}{2}
 
 %\renewcommand{\LARGE}{\large}
 %\renewcommand{\Huge}{\Large}
