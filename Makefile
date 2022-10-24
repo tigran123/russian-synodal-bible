@@ -45,9 +45,7 @@ vclean:		clean
 $(MOD).pdf:	tex $(MOD).tex select-book.tex $(TEXFILES)
 		$(LATEX)
 ifndef DRAFT
-		mv $(MOD).pdf $(MOD)-1.pdf
 		$(LATEX)
-		mv $(MOD).pdf $(MOD)-2.pdf
 		if test -s $(MOD).out; then sort -t% -k2,2n $(MOD).out > $(MOD).out.tmp && mv $(MOD).out.tmp $(MOD).out; fi
 		$(LATEX)
 		if test -s $(MOD).fnchk; then ../utils/fnchk.pl < $(MOD).fnchk; fi
