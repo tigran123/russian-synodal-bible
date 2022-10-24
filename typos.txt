@@ -1,0 +1,79 @@
+The list of known typos in the Russian Synodal Bible
+====================================================
+
+The edition of the Russian Synodal Bible I used to find these typos is the one
+published by the Trinitarian Bible Society, ISBN: 1862281084.
+The latest version of this file can be always obtained from:
+
+http://www.moses.uklinux.net/bible/typos/russian/typos.txt
+
+To get the exact letters to be used in typesetting, get the KOI-8 version of
+this document at:
+
+http://www.moses.uklinux.net/bible/typos/russian/typos.koi
+
+Part I. Typos
+=============
+
+1. Genesis 49:1		"budem s vami" should be "budet s vami"
+
+2. Genesis 21:14	"plecha" should be "plechi"
+
+3. Genesis 31:29	"nashego" should be "vashego"
+
+4. Exodus 1:10		"protivu" should be "protiv"
+
+5. Levit. 6:21		"pri-Gospodu" should be "prinosi ee v prijatnoe blagouchanie Gospodu".
+			This one is very interesting. It seems that the different editions of the
+			Synodal Text strive to keep the 1-1 match between the chapter/verse and the
+			page numbers. This means that a given verse will always occur on the same
+			page no matter what edition one is holding in his hands. Now, if one
+			were to correct this [obvious] typo then the page numbering match will
+			break. So, some editions (e.g. the Moscow 1989 edition I have) have typeset
+			this verse (Lev 6:21) in smaller type, thus keeping the page count
+			unchanged.
+
+6. Numbers 23 (preface)	"prokinantija" should be "proklinanija"
+
+7. Leviticus 23:27	"devjatij" (9th) should be "desjatij" (10th). Indeed,
+			KJV and all other trustworthy translations say "tenth
+			day" but the real proof is obtained by checking the
+			Hebrew original, where we find "beashor", i.e. based
+			on the word 6218 from Strong's Concordance which is
+			never translated as 9 but always as 10 (because
+			"ashor" means 10!) So, whether this is a deliberate
+			mistranslation or a typo, it should be corrected.
+			It is important to know when the feasts of our Lord
+			occur so we can keep them in their proper seasons.
+
+8. 1Kings 1:35		"vmestvo" should be "vmesto". The Moscow edition of
+			the Russian Synodal Bible has corrected this one.
+
+9. 2Kings 9:24		"serdca" should be "serdce"
+			Moscow edition has the correct spelling. Henceforth
+			I won't repeat this fact because Moscow edition seems
+			to have almost all the typos corrected.
+
+10. 2Kings 23:1		"ki" should be "k"
+
+11. 1Chr 6:3		"Mojsej" should be "Moisej"
+
+12. 1Chr 15:18		"Iaa ziila" should be "Iaa-ziila", i.e. a hyphen '-'
+			for carrying forward onto the next line is missing.
+
+13. Psalms 19:8		"kolesnicmai" should be "kolesnicami"
+
+14. Psalms 45:3		"dvignulis'" should be "dvinulis'"
+
+
+Part II. Mistranslations
+========================
+
+1. 3Kings 12:20		Here the translator seems to have followed Septuagint
+			instead of remaining faitful to the Hebrew. Namely he
+			added "i Veniamina", i.e. "and the tribe of Benjamin",
+			albeit in italic. I suggest this to be removed as is
+			done in all good English and non-English translations
+			that I have checked.
+
+Please send all your comments to Tigran Aivazian <tigran@aivazian.fsnet.co.uk>
